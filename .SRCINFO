@@ -1,6 +1,6 @@
 pkgbase = kwallet-git
 	pkgdesc = KWallet Framework
-	pkgver = r1241.45f1018
+	pkgver = r1437.e9465b04
 	pkgrel = 1
 	url = https://projects.kde.org/projects/frameworks/kwallet
 	arch = i686
@@ -17,9 +17,10 @@ pkgbase = kwallet-git
 	depends = gpgme
 	depends = qca-qt6
 	provides = kwallet
+	provides = kwallet5
 	conflicts = kwallet
-	source = https://github.com/KDE/kwallet.git
+	conflicts = kwallet5
+	source = git+https://github.com/KDE/kwallet.git
 	md5sums = SKIP
 
 pkgname = kwallet-git
-
