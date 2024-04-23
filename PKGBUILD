@@ -1,7 +1,7 @@
 # Maintainer: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=kwallet-git
-pkgver=r1437.e9465b04
+pkgver=r1447.def97840
 pkgrel=1
 pkgdesc='KWallet Framework'
 arch=(i686 x86_64)

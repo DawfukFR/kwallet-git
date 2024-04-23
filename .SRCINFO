@@ -1,6 +1,6 @@
 pkgbase = kwallet-git
 	pkgdesc = KWallet Framework
-	pkgver = r1437.e9465b04
+	pkgver = r1447.def97840
 	pkgrel = 1
 	url = https://projects.kde.org/projects/frameworks/kwallet
 	arch = i686
