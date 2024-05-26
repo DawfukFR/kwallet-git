@@ -1,10 +1,10 @@
 # Maintainer: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=kwallet-git
-pkgver=r1449.fe148663
+pkgver=6.3.0.r1456.425cf15f
 pkgrel=1
 pkgdesc='KWallet Framework'
-arch=(i686 x86_64)
+arch=(x86_64)
 url='https://projects.kde.org/projects/frameworks/kwallet'
 license=(LGPL)
 depends=(knotifications-git kiconthemes-git kservice-git gpgme qca-qt6)
@@ -16,7 +16,8 @@ md5sums=('SKIP')
 
 pkgver() {
   cd kwallet
-  printf "r%s.%s" "$(git rev-list --count HEAD)" "$(git rev-parse --short HEAD)"
+  _ver="$(cat CMakeLists.txt | grep -m1 'KF_VERSION' | grep -o "[[:digit:]]*" | paste -sd'.')"
+  echo "${_ver}.r$(git rev-list --count HEAD).$(git rev-parse --short HEAD)"
 }
 
 prepare() {
